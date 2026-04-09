@@ -109,7 +109,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-pink-200 to-pink-300 text-white py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl mb-6 text-gray-500">Ready for a Spotless Home?</h2>
+          <h2 className="text-3xl sm:text-4xl mb-6 text-gray-500">for a Spotless Home?</h2>
           <p className="text-lg sm:text-xl text-gray-600 mb-8">
             Contact us today and experience the difference professional cleaning
             makes
