@@ -13,7 +13,6 @@ import img11 from "../../assets/cff9a68438a4d63909ecc2b93724780aced4c4c8.png";
 import img12 from "../../assets/1000003050.jpg";
 import img13 from "../../assets/1000003051.jpg";
 import img14 from "../../assets/1000003053.jpg";
-import img15 from "../../assets/1000003054.jpg";
 import img16 from "../../assets/1000003055.jpg";
 import img17 from "../../assets/1000003056.jpg";
 import img18 from "../../assets/1000003057.jpg";
@@ -23,7 +22,7 @@ import img21 from "../../assets/1000003061.jpg";
 import img22 from "../../assets/1000003062.jpg";
 import img23 from "../../assets/1000003063.jpg";
 
-const images = [img1, img12, img2, img13, img3, img14, img4, img15, img5, img16, img6, img17, img7, img18, img8, img19, img9, img20, img10, img21, img11, img22, img23];
+const images = [img1, img12, img2, img13, img3, img14, img4, img5, img16, img6, img17, img7, img18, img8, img19, img9, img20, img10, img21, img11, img22, img23];
 
 export function Gallery() {
   // Duplicate images for seamless loop
