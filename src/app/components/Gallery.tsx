@@ -21,8 +21,26 @@ import img20 from "../../assets/1000003059.jpg";
 import img21 from "../../assets/1000003061.jpg";
 import img22 from "../../assets/1000003062.jpg";
 import img23 from "../../assets/1000003063.jpg";
+import photo2522 from "../../assets/IMG_2522.jpg";
+import photo2523 from "../../assets/IMG_2523.jpg";
+import photo2524 from "../../assets/IMG_2524.jpg";
+import photo2525 from "../../assets/IMG_2525.jpg";
+import photo2526 from "../../assets/IMG_2526.jpg";
+import photo2527 from "../../assets/IMG_2527.jpg";
+import photo2528 from "../../assets/IMG_2528.jpg";
+import photo2529 from "../../assets/IMG_2529.jpg";
+import photo2530 from "../../assets/IMG_2530.jpg";
+import photo2531 from "../../assets/IMG_2531.jpg";
+import photo2532 from "../../assets/IMG_2532.jpg";
+import photo2533 from "../../assets/IMG_2533.jpg";
+import photo2534 from "../../assets/IMG_2534.jpg";
 
-const images = [img1, img12, img2, img13, img3, img14, img4, img5, img16, img6, img17, img7, img18, img8, img19, img9, img20, img10, img21, img11, img22, img23];
+const images = [
+  photo2522, photo2523, photo2524, photo2525, photo2526, photo2527, photo2528,
+  photo2529, photo2530, photo2531, photo2532, photo2533, photo2534,
+  img1, img12, img2, img13, img3, img14, img4, img5, img16, img6, img17,
+  img7, img18, img8, img19, img9, img20, img10, img21, img11, img22, img23,
+];
 
 export function Gallery() {
   // Duplicate images for seamless loop
@@ -47,7 +65,7 @@ export function Gallery() {
             x: {
               repeat: Infinity,
               repeatType: "loop",
-              duration: 90,
+              duration: images.length * (90 / 22),
               ease: "linear",
             },
           }}
@@ -55,11 +73,13 @@ export function Gallery() {
           {duplicatedImages.map((image, index) => (
             <div
               key={index}
+              aria-hidden={index >= images.length}
               className="flex-shrink-0 w-64 h-44 sm:w-80 sm:h-56 lg:w-[352px] lg:h-[264px] rounded-xl overflow-hidden shadow-lg"
             >
               <img
                 src={image}
                 alt={`Cleaning work ${index + 1}`}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
